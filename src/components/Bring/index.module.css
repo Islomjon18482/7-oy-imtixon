@@ -1,0 +1,64 @@
+.bring{
+    display: flex;
+    align-items: center;
+    padding: 0px 165px;
+    gap: 125px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+.bring__img{
+    background-image: url(../public/bring.png);
+    height: 588px;
+    min-width: 540px;
+    background-repeat: no-repeat;
+}
+.bring__text h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.bring__text h2 span{
+    color: #D87D4A;
+}
+.bring__text p{
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+}
+@media screen and (max-width: 1330px) {
+    .bring{
+        flex-direction: column-reverse;
+        gap: 63px;
+        padding: 0px 40px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .bring__img{
+        background-image: url(../public/bringtablet.png);
+        height: 300px;
+        min-width: 689px;
+        background-repeat: no-repeat;
+    }
+    .bring__text h2{
+        text-align: center;
+    }
+    .bring__text p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .bring__img{
+        background-image: url(../public/bringPhone.png);
+        height: 300px;
+        min-width: 327px;
+        background-repeat: no-repeat;
+    }
+}

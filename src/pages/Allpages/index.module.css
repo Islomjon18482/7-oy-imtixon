@@ -1,0 +1,37 @@
+.heading{
+    padding: 95px 0px;
+    text-align: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+font-size: 34px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 1.43px;
+text-align: center;
+text-transform: uppercase;
+}
+@keyframes scrollUpAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    animation: scrollUpAnimation 0.5s ease forwards;
+  }
+  
+@media screen and (max-width: 998px) {
+    .heading{
+        padding: 40px 0px;
+        font-size: 20px;
+    }
+}

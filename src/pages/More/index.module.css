@@ -1,0 +1,335 @@
+.card__wrapper{
+    padding: 0px 165px;
+    display: flex;
+    gap: 125px;
+    margin: 0px auto;
+    align-items: center;
+    margin-top: 56px;
+    margin-bottom: 160px;
+    justify-content: center;
+}
+.goBack{
+    margin-top: 79px;
+    padding: 0px 165px;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.futured__wrapper{
+    margin-bottom: 160px;
+    gap: 125px;
+    padding: 0px 165px;
+    display: flex;
+    justify-content: center;
+}
+.futured__text h2{
+    margin-bottom: 32px;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.lists__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.list{
+    display: flex;
+    gap: 24px;
+}
+.list span{
+    color: rgb(216, 125, 74);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.list p{
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.futured__text p{
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.futured__box h2{
+    color: rgb(0, 0, 0);
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.futured__box{
+    min-width: 350px;
+}
+.card__wrapper h4{
+    color: rgb(216, 125, 74);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.card__wrapper h2{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.card__wrapper p{
+    width: 445px;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.card__wrapper button{
+    cursor: pointer;
+    background: rgb(216, 125, 74);
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    border: none;
+}
+.card__text{
+    width: 530px;
+}
+.card__img{
+    width: 540px;
+    height: 560px;
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 241, 241);
+}
+.card__img img{
+    width: 295.84px;
+    height: 385px;
+}
+.add{
+    display: flex;
+    padding-top: 48px;
+    gap: 16px;
+}
+.decrement{
+    cursor: pointer;
+}
+.increment{
+    cursor: pointer;
+}
+.num{
+    justify-content: space-between;
+    display: flex;
+    background: rgb(241, 241, 241);
+    padding: 15px;
+    width: 120px;
+}
+.galery{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+.colum{
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.other{
+    padding: 0px 160px;
+    margin-top: 160px;
+    text-align: center;
+    margin-bottom: 160px;
+}
+.other>h2{
+    margin-bottom: 64px;
+}
+.other .card .card__img{
+    width: 358px;
+    height: 318px;
+    border-radius: 8px;
+    background: rgb(241, 241, 241);
+}
+.other .card .card__img img{
+    width: 190px;
+    height: 190px;
+}
+.other .card__text {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 40px;
+}
+.other__cards{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 18px;
+    width: auto;
+    margin: 0px auto;
+    justify-content: center;
+}
+.other .card__text button{
+    cursor: pointer;
+    margin: 0px auto;
+    border: none;
+    width: 160px;
+    padding: 15px 30px;
+    background: rgb(216, 125, 74);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 998px) {
+    .futured__wrapper{
+        padding: 0px 100px;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .futured__box{
+        display: block;
+        width: auto;
+    }
+    .card__wrapper{
+        flex-direction: column !important;
+    }
+    .add{
+        margin: 0px auto;
+        width: auto;
+        justify-content: center;
+    }
+    .card__img img{
+        width: 220px;
+        height: 243px;
+    }
+    .card__text{
+        width: auto;
+    }
+    .card__img{
+        width: 689px;
+        height: 352px;
+    }
+    .card__wrapper{
+        flex-direction: column;
+        padding: 0;
+        gap: 50px;
+        text-align: center;
+    }
+    .card__wrapper h4{
+        text-align: center;
+    }
+    .card__wrapper h2{
+        text-align: center;
+    }
+    .card__wrapper p{
+        margin: 0px auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 698px) {
+    .colum img{
+        max-width: 327px;
+        max-height: 174px;
+        object-fit: cover;
+    }
+    .row img{
+        max-width: 277px;
+        max-height: 368px;
+        object-fit: cover;
+    }
+    .galery{
+        width: 277px;
+        margin: 0px auto;
+        flex-direction: column;
+        margin-bottom: 12   0px;
+    }
+    .futured__wrapper{
+        padding: 0px 40px;
+    }
+    .card__wrapper .card__img{
+        width: 327px;
+        height: 352px;
+    }
+    .card__text{
+        width: auto;
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (max-width: 442px) {
+    .card__wrapper p{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1098px) {
+    .colum img{
+        width: 277px;
+        height: 174px;
+    }
+    .row img{
+        width: 395px;
+        height: 368px;
+    }
+}
+@keyframes scrollUpAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    animation: scrollUpAnimation 0.5s ease forwards;
+  }
+  

@@ -1,0 +1,195 @@
+.more__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0px 165px;
+}
+.zx9__wrapper{
+    padding: 132px 95px 0px;
+    border-radius: 8px;
+    display: flex;
+    height: 560px;
+    overflow: hidden;
+    background: rgb(216, 125, 74);
+    padding-bottom: 0px;
+    gap: 48px;
+    justify-content: space-between;
+}
+.zx9Card__text{
+    padding-top: 70px;
+}
+.zx9Card__text h2{
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.zx9Card__text p{
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.zx9Card__text button{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    background: rgb(76, 76, 76);
+    border: none;
+    padding: 15px 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.zx9__wrapper{
+    background-image: url(./zxBackground.png);
+    background-repeat: no-repeat;
+    background-position: -150px -60px;
+}
+.zx7__wrapper{
+    padding: 101px 95px;
+    height: 320px;
+    width: 100%;
+    filter: contrast(1);
+    background: rgba(187, 187, 187, 0.765);
+    background-image: url(./zx7.png);
+    background-position: right -500px;
+    background-repeat: no-repeat;
+}
+.zx7__wrapper h2{
+    margin-bottom: 32px;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.zx7__wrapper button{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    text-align: left;
+    border: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+}
+.xy1__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0px auto;
+}
+.xy1__text{
+    padding: 101px 95px;
+    width: 540px;
+    height: 320px;
+    border-radius: 8px;
+    background: rgb(241, 241, 241);
+}
+.xy1__text h2{
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.xy1__text button{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    text-align: left;
+    border: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+}
+@media screen and (max-width: 1448px) {
+    .zx9__wrapper{
+        height: auto;
+        padding-top: 0;
+        align-items: center;
+        justify-content: start;
+        padding-bottom: 25px;
+        flex-direction: column;
+        background-position: center -340px;
+    }
+    .zx9__wrapper img{
+        width: 197.21px;
+        height: 237px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 0px auto;
+    }
+    .zx9Card__text{
+        padding-top: 0px;
+    }
+    .zx9Card__text h2{
+        text-align: center;
+    }
+    .zx9Card__text p{
+        text-align: center;
+    }
+    .zx9Card__text button{
+        margin: 0px auto;
+        display: block;
+    }
+    .zx7__wrapper{
+        background-color: rgba(109, 108, 108, 0.536);
+        background-position: -170px -500px;
+    }
+    .xy1__wrapper{
+        flex-direction: column;
+    }
+
+    .more__wrapper{
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 632px) {
+    .xy1__wrapper img{
+        width: 327px;
+    }
+    .xy1__text{
+        text-align: center;
+        width: 327px;
+        padding: 100px 50px;
+    }
+    .xy1__text h2{
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    .zx7__wrapper{
+        padding: 100px 50px;
+    }
+    .zx7__wrapper h2{
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+}
