@@ -2,7 +2,7 @@
   color: white;
   display: flex;
   padding: 0px 165px;
-  background-color: black;
+  background: #131313;
   align-items: center;
   gap: 50px;
   justify-content: space-between;
@@ -58,7 +58,6 @@
     background: rgb(251, 175, 133);
 }
 .product__img img{
-    filter: brightness(20%);
     width: 550px; 
     height: 620px; 
     object-fit: none;

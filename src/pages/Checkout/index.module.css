@@ -1,3 +1,375 @@
-.checkout__wrapper{
-    background: rgb(241, 241, 241);
+.checkout__wrapper {
+  background: rgb(242, 242, 242);
+}
+form {
+  width: 730px;
+  padding: 54px 48px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+form h2 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+form p {
+  color: rgb(216, 125, 74);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.93px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.name__email {
+  display: flex;
+  gap: 16px;
+}
+.name__email label {
+  width: 50%;
+}
+form label p {
+  margin-top: 24px;
+  margin-bottom: 9px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.21px;
+  text-align: left;
+}
+form input {
+  box-sizing: border-box;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 8px;
+  width: 100%;
+  padding: 18px 24px;
+  background: rgb(255, 255, 255);
+}
+.shipping {
+  margin-top: 53px;
+}
+.code__city {
+  display: flex;
+  gap: 16px;
+}
+.code__city label {
+  width: 50%;
+}
+.payments > p {
+  margin-top: 61px;
+}
+.money {
+  display: flex;
+}
+.card {
+  display: flex;
+}
+input[type="radio"] {
+  width: 20px;
+}
+.method {
+  width: 76%;
+  justify-content: space-between;
+  display: flex;
+}
+.method p {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.21px;
+  text-align: left;
+}
+.method h3 {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  text-align: left;
+}
+.money {
+  display: flex;
+  gap: 10px;
+}
+.card {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.payment__order {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+.payment__order label {
+  width: 50%;
+}
+.details {
+  width: 350px;
+  padding: 32px 33px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+.details h2 {
+  margin-bottom: 31px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.29px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.card__img {
+  padding: 13px 14px;
+  border-radius: 8px;
+  background: rgb(241, 241, 241);
+}
+.card__img img {
+  width: 36px;
+  height: 40px;
+}
+.img__cost {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+.card h3 {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card p {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card span {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.cards__sumary {
+  display: flex;
+  flex-direction: column;
+}
+.info1 {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info1 h4 {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.info1 span {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.garond__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.garond__total span {
+  color: rgb(216, 125, 74);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.details button {
+  cursor: pointer;
+  border: none;
+  margin-top: 32px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(216, 125, 74);
+}
+.form__wrapper {
+  padding: 50px;
+  margin: 0px auto;
+  align-items: start;
+  display: flex;
+  gap: 30px;
+  width: max-content;
+}
+.modal {
+  padding: 48px;
+  width: 540px;
+  height: 581px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+.modal > img {
+  margin-bottom: 33px;
+}
+.modal > h2 {
+  margin-bottom: 24px;
+  color: rgb(0, 0, 0);
+  width: 284px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.modal > p {
+  margin-bottom: 33px;
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.modal__info {
+  display: flex;
+  width: 100%;
+}
+.card__info {
+  padding: 24px;
+  width: 444px;
+  border-radius: 8px;
+  background: rgb(241, 241, 241);
+}
+.card__info img {
+  width: 28px;
+  height: 32px;
+}
+.card__modal {
+  align-items: center;
+  display: flex;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.293);
+  justify-content: space-between;
+}
+.card__modal h5 {
+  width: 100px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card__modal h4 {
+  opacity: 0.5;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card__info p {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.21px;
+}
+.black__info {
+  width: 300px;
+  border-radius: 0px 8px 8px 0px;
+  background: rgb(0, 0, 0);
+  padding: 41px 32px;
+}
+.black__info p {
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.black__info h3 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+.modal button {
+  cursor: pointer;
+  margin-top: 46px;
+  background: rgb(216, 125, 74);
+  width: 100%;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+.go{
+    padding: 50px 165px 0;
 }

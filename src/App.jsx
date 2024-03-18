@@ -5,10 +5,13 @@ import Home from "./pages/Home/Home.jsx";
 import Allpages from "./pages/Allpages/index.jsx";
 import More from "./pages/More/index.jsx";
 import Checkout from "./pages/Checkout/index.jsx";
+import Error from "./pages/Error/index.jsx"; 
 
 function App() {
+
   return (
     <>
+    
       <Routes>
         <Route
           path="/"
@@ -42,6 +45,9 @@ function App() {
             </Loyaut>
           }
         ></Route>
+        <Route path="*" element={<Error></Error>}>
+
+        </Route>
       </Routes>
     </>
   );

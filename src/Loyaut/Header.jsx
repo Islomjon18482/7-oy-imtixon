@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from "../../public/logo.svg"
 import Basket from "../../public/basket.svg"
 import Hamburger from "../../public/hamburger.svg"
 import { Link } from 'react-router-dom'
 import styles from "./index.module.css"
+import { useDispatch, useSelector } from 'react-redux';
 
 function Header() {
     const [show, setShow] = useState(false)
+    const cards = useSelector(state => state.cards);
 
     function showNav(){
         if(show){
@@ -15,41 +17,48 @@ function Header() {
             setShow(true)
         }
     }
+
+    useEffect(()=>{
+        console.log(cards)
+    }, [])
   return (
-    <header>
-            <div className={styles.header__content}>
-                <div className={styles.responsive}>
-                <div className={styles.hamburger}>
-                    <img onClick={showNav} src={Hamburger} alt="" />
+    <>
+        
+        <header>
+                <div className={styles.header__content}>
+                    <div className={styles.responsive}>
+                    <div className={styles.hamburger}>
+                        <img onClick={showNav} src={Hamburger} alt="" />
+                    </div>
+                    {show && <div className={styles.column__links}>
+                        <ul>
+                            <Link style={{textDecoration: "none", color: "white"}} to="/"><li>HOME</li></Link>
+                            <Link style={{textDecoration: "none", color: "white"}} to="/page/HEADPHONES"><li>HEADPHONES</li></Link>
+                            <Link style={{textDecoration: "none", color: "white"}} to="/page/SPEAKERS"><li>SPEAKERS</li></Link>
+                            <Link style={{textDecoration: "none", color: "white"}} to="/page/EARPHONES"><li>EARPHONES</li></Link>
+                        </ul>
+                    </div>}
+                    </div>
+                    <div className={styles.header__logo}>
+                        <Link to="/">
+                        <img src={Logo}/>
+                        </Link>
+                    </div>
+                    <div className={styles.links}>
+                        <ul>
+                            <Link to="/"><li>HOME</li></Link>
+                            <Link to="/page/HEADPHONES"><li>HEADPHONES</li></Link>
+                            <Link to="/page/SPEAKERS"><li>SPEAKERS</li></Link>
+                            <Link to="/page/EARPHONES"><li>EARPHONES</li></Link>
+                        </ul>
+                    </div>
+                    <div className={styles.basket}>
+                        <img src={Basket}/>
+                    </div>
                 </div>
-                {show && <div className={styles.column__links}>
-                    <ul>
-                        <Link style={{textDecoration: "none", color: "white"}} to="/"><li>HOME</li></Link>
-                        <Link style={{textDecoration: "none", color: "white"}} to="/page/HEADPHONES"><li>HEADPHONES</li></Link>
-                        <Link style={{textDecoration: "none", color: "white"}} to="/page/SPEAKERS"><li>SPEAKERS</li></Link>
-                        <Link style={{textDecoration: "none", color: "white"}} to="/page/EARPHONES"><li>EARPHONES</li></Link>
-                    </ul>
-                </div>}
-                </div>
-                <div className={styles.header__logo}>
-                    <Link to="/">
-                    <img src={Logo}/>
-                    </Link>
-                </div>
-                <div className={styles.links}>
-                    <ul>
-                        <Link to="/"><li>HOME</li></Link>
-                        <Link to="/page/HEADPHONES"><li>HEADPHONES</li></Link>
-                        <Link to="/page/SPEAKERS"><li>SPEAKERS</li></Link>
-                        <Link to="/page/EARPHONES"><li>EARPHONES</li></Link>
-                    </ul>
-                </div>
-                <div className={styles.basket}>
-                    <img src={Basket}/>
-                </div>
-            </div>
-            <div className={styles.border}></div>
-    </header>
+                <div className={styles.border}></div>
+        </header>
+    </>
   )
 }
 

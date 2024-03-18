@@ -10,6 +10,7 @@ letter-spacing: 1.43px;
 text-align: center;
 text-transform: uppercase;
 }
+
 @keyframes scrollUpAnimation {
     0% {
       opacity: 0;
@@ -27,6 +28,50 @@ text-transform: uppercase;
     right: 20px;
     opacity: 0;
     animation: scrollUpAnimation 0.5s ease forwards;
+  }
+  .circleContainer {
+    position: relative;
+    height: 70px;
+    width: 70px;
+  }
+  .loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circleProgress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ACCAFF36;
+    border-radius: 50%;
+  }
+  
+  .circleContainer::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #ACCAFF;
+    top: -5px;
+    left: -5px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
   }
   
 @media screen and (max-width: 998px) {
