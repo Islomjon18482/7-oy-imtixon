@@ -1,53 +1,80 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Loyaut from "./Loyaut/index.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Allpages from "./pages/Allpages/index.jsx";
 import More from "./pages/More/index.jsx";
 import Checkout from "./pages/Checkout/index.jsx";
-import Error from "./pages/Error/index.jsx"; 
+import Error from "./pages/Error/index.jsx";
+import Singup from "./pages/Singup/index.jsx";
+import Singin from "./pages/Singin/index.jsx";
 
 function App() {
+  const navigate = useNavigate();
+  const [token, setToken] = useState(localStorage.getItem("token"));
+
+  useEffect(() => {
+    setToken(localStorage.getItem("token"));
+    if(!token){
+      navigate("/singin")
+    }
+  }, []);
+
+  function ProtectedRouter({ children, isAuthenication }) {
+    if (!isAuthenication) {
+      navigate("/singin");
+      return null;
+    }
+    return children;
+  }
 
   return (
     <>
-    
       <Routes>
         <Route
           path="/"
           element={
-            <Loyaut>
-              <Home></Home>
-            </Loyaut>
+            <ProtectedRouter isAuthenication={token ? true : false}>
+              <Loyaut>
+                <Home />
+              </Loyaut>
+            </ProtectedRouter>
           }
-        ></Route>
+        />
         <Route
           path="/page/:page"
           element={
-            <Loyaut>
-              <Allpages></Allpages>
-            </Loyaut>
+            <ProtectedRouter isAuthenication={token ? true : false}>
+              <Loyaut>
+                <Allpages />
+              </Loyaut>
+            </ProtectedRouter>
           }
-        ></Route>
+        />
         <Route
           path="/product/:id"
           element={
-            <Loyaut>
-              <More />
-            </Loyaut>
+            <ProtectedRouter isAuthenication={token ? true : false}>
+              <Loyaut>
+                <More />
+              </Loyaut>
+            </ProtectedRouter>
           }
-        ></Route>
+        />
         <Route
           path="/checkout"
           element={
-            <Loyaut>
-              <Checkout />
-            </Loyaut>
+            <ProtectedRouter isAuthenication={token ? true : false}>
+              <Loyaut>
+                <Checkout />
+              </Loyaut>
+            </ProtectedRouter>
           }
-        ></Route>
-        <Route path="*" element={<Error></Error>}>
-
-        </Route>
+        />
+        <Route path="*" element={<Error />} />
+        <Route path="/singup" element={<Singup />} />
+        <Route path="/singin" element={<Singin />} />
       </Routes>
     </>
   );
